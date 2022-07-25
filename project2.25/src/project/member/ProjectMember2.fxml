@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1400.0" style="-fx-background-color: fef9f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="663.0" layoutY="600.0" prefHeight="220.0" prefWidth="511.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="350.0" />
+            <HBox alignment="CENTER" prefHeight="125.0" prefWidth="350.0" spacing="15.0" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="69.0" layoutY="28.0" prefHeight="60.0" prefWidth="341.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Users/Administrator/Desktop/1389234.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="homeId" prefHeight="31.0" prefWidth="200.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" text="님">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </HBox>
+      <Button alignment="CENTER" layoutX="969.0" layoutY="14.0" mnemonicParsing="false" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="공지사항" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow height="4.0" radius="1.75" width="5.0" />
+         </effect>
+      </Button>
+      <VBox alignment="BOTTOM_CENTER" layoutX="781.0" layoutY="-174.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: pink;" text="회원정보">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutProc" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: pink;" text="로그아웃">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="350.0">
+               <children>
+                  <Label text="먼치킨 애견샵">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox layoutX="69.0" layoutY="180.0" prefHeight="385.0" prefWidth="1262.0" spacing="70.0">
+         <children>
+            <VBox prefHeight="359.0" prefWidth="374.0" style="-fx-background-color: ae9c8d;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox prefHeight="359.0" prefWidth="374.0" style="-fx-background-color: ae9c8d;" />
+            <VBox prefHeight="359.0" prefWidth="374.0" style="-fx-background-color: ae9c8d;" />
+         </children>
+      </HBox>
+      <HBox layoutX="69.0" layoutY="99.0" prefHeight="60.0" prefWidth="1319.0" spacing="70.0">
+         <children>
+            <Button fx:id="reserve" mnemonicParsing="false" onAction="#reserveOpenProc" prefHeight="60.0" prefWidth="374.0" style="-fx-background-color: fef9f0;" text="Dog grooming reservation" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="messageButton" mnemonicParsing="false" onAction="#messageOpenProc" prefHeight="60.0" prefWidth="375.0" style="-fx-background-color: fef9f0;" text="Munchkin Dog Shop Bulletin Board" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="dogShop" mnemonicParsing="false" onAction="#dogShopProc" prefHeight="60.0" prefWidth="375.0" style="-fx-background-color: fef9f0;" text="Dog Goods" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="555.0" layoutY="23.0" prefHeight="71.0" prefWidth="265.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="41.0" prefWidth="179.0" />
+            <Label prefHeight="31.0" prefWidth="381.0" text="Customer Page">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="500.0" style="-fx-background-color: ffff96;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.manager.memberList.addBoard.AddController">
+   <children>
+      <Button fx:id="regButton" layoutX="185.0" layoutY="538.0" mnemonicParsing="false" onAction="#plusMember" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: ff7200;" text="ADD!" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" color="WHITE" height="3.0" radius="1.0" width="3.0" />
+         </effect></Button>
+      <AnchorPane layoutX="10.0" layoutY="167.0" prefHeight="358.0" prefWidth="480.0" style="-fx-background-color: feefae;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" color="#fff6de" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <children>
+            <Label layoutX="41.0" layoutY="29.0" text="I        D       :" textFill="#ff4c46">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="#ff4c46" layoutX="41.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password   :">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ff4c46" fontSmoothingType="LCD" layoutX="42.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PasswordCheck    :" wrappingWidth="156.9999929368496">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ff4c46" fontSmoothingType="LCD" layoutX="42.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender       :">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ff4c46" fontSmoothingType="LCD" layoutX="41.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age             :">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ff4c46" fontSmoothingType="LCD" layoutX="43.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber       :">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="pwTxt" layoutX="240.0" layoutY="58.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </PasswordField>
+            <PasswordField fx:id="confirmTxt" layoutX="240.0" layoutY="89.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </PasswordField>
+            <RadioButton fx:id="womanRadio" layoutX="309.0" layoutY="133.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="여">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="manRadio" layoutX="242.0" layoutY="133.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="남" toggleGroup="$gender">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <ComboBox fx:id="ageCombo" layoutX="217.0" layoutY="160.0" prefWidth="150.0" promptText="연령선택" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </ComboBox>
+            <ComboBox fx:id="countryCode" layoutX="217.0" layoutY="191.0" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </ComboBox>
+            <TextField fx:id="phoneNumber" layoutX="319.0" layoutY="191.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </TextField>
+            <Label layoutX="41.0" layoutY="230.0" text="Dog" textFill="#ff7200">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="267.0" text="Name    :" textFill="#ff7200">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="petName1Txt" layoutX="135.0" layoutY="267.0" prefHeight="23.0" prefWidth="64.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </TextField>
+            <Label layoutX="232.0" layoutY="267.0" text="Sex        :" textFill="#ff7200">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="petMaleRadio" layoutX="341.0" layoutY="270.0" mnemonicParsing="false" text="남">
+               <toggleGroup>
+                  <ToggleGroup fx:id="pexsex" />
+               </toggleGroup>
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="petFemaleRadio" layoutX="388.0" layoutY="270.0" mnemonicParsing="false" text="여">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="40.0" layoutY="306.0" text="Age        :" textFill="#ff7200">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="petAge" layoutX="135.0" layoutY="306.0" prefHeight="23.0" prefWidth="64.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </ComboBox>
+            <Label layoutX="233.0" layoutY="306.0" text="Breed    :" textFill="#ff7200">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="petBreed" layoutX="334.0" layoutY="306.0" prefHeight="23.0" prefWidth="93.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </ComboBox>
+            <TextField fx:id="idTxt" layoutX="240.0" layoutY="29.0" style="-fx-background-color: fee6e7;">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="162.0" fitWidth="507.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../상단로고.png" />
+         </image>
+         <effect>
+            <DropShadow color="WHITE" height="67.67" radius="20.125" spread="0.55" width="14.83" />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>

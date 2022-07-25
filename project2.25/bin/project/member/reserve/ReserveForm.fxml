@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: feefae;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.member.reserve.ReserveController">
+   <children>
+      <DatePicker fx:id="datePicker" layoutX="330.0" layoutY="294.0" style="-fx-background-color: fdcdcd;" />
+      <ComboBox fx:id="serviceHour" layoutX="325.0" layoutY="203.0" prefHeight="23.0" prefWidth="162.0" style="-fx-background-color: fdcdcd;" />
+      <TextField fx:id="name" layoutX="74.0" layoutY="203.0" prefHeight="23.0" prefWidth="180.0" style="-fx-background-color: fdcdcd;" />
+      <ComboBox fx:id="service" layoutX="71.0" layoutY="294.0" prefHeight="23.0" prefWidth="180.0" style="-fx-background-color: fdcdcd;" />
+      <Button fx:id="addReserveButton" layoutX="57.0" layoutY="374.0" mnemonicParsing="false" onAction="#addReserveProc" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: b28960;" text="Ok!" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="openButton" layoutX="203.0" layoutY="374.0" mnemonicParsing="false" onAction="#reserveListopen" prefHeight="30.0" prefWidth="168.0" style="-fx-background-color: b28960;" text="Reservation status" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="backButton" layoutX="411.0" layoutY="374.0" mnemonicParsing="false" onAction="#exitProc" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: b28960;" text="Back" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Label layoutX="333.0" layoutY="255.0" text="Select Date" textFill="#f57f00">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label layoutX="325.0" layoutY="166.0" text="Time Choose" textFill="#f57f00">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="169.0" text="Your Name" textFill="#f57f00">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="255.0" text="Service choose" textFill="#f57f00">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Text layoutX="-393.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog grooming reservation" />
+      <AnchorPane layoutX="566.0" prefHeight="500.0" prefWidth="235.0" style="-fx-background-color: b28960;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="197.0" layoutX="25.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../리저브등록할떄강아지.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="19.0" layoutY="250.0" prefHeight="189.0" prefWidth="197.0" style="-fx-background-color: ffd0a1;" text="There are many variations&#10; of passages of Lorem Ipsum&#10; available, but the majority&#10; have suffered alteration in&#10; some form, by injected&#10; humour, or randomised&#10; words which don't look even &#10;slightly believable.&#10; If you are going to use a &#10;passage of Lorem Ipsum,&#10; you need to be sure there " />
+            <ImageView fitHeight="30.0" fitWidth="72.0" layoutX="98.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../뼈다귀.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Text fill="#a44b4b" layoutX="186.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="45.0" layoutX="117.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../발자국사진.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="45.0" layoutX="397.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../발자국사진.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

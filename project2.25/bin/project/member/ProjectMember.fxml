@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: feefae;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.member.MemberController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="64.0" prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../아이디옆.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.52" color="WHITE" height="6.17" radius="9.2575" width="32.86" />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" ellipsisString="" prefHeight="21.0" prefWidth="122.0" text="Welcome">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </HBox>
+      <HBox layoutX="29.0" layoutY="176.0" mouseTransparent="true" prefHeight="271.0" prefWidth="935.0" spacing="70.0">
+         <children>
+            <AnchorPane prefHeight="360.0" prefWidth="375.0" style="-fx-background-color: f7be68;">
+               <effect>
+                  <InnerShadow color="WHITE" height="32.86" radius="17.4125" width="38.79" />
+               </effect>
+               <children>
+                  <HBox alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="104.0" prefWidth="236.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../작은애사진.png" />
+                           </image>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.21" color="WHITE" height="90.41" radius="52.8575" width="123.02" />
+                           </effect>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Siva Cut">
+                           <font>
+                              <Font name="Sylfaen" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <InnerShadow choke="1.0" color="WHITE" height="255.0" radius="127.0" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="11.0" layoutY="136.0" prefHeight="116.0" prefWidth="244.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="foodle Cut">
+                           <font>
+                              <Font name="Sylfaen" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="55.0" top="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <InnerShadow choke="1.0" color="WHITE" height="255.0" radius="127.0" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                        <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../큰%20애%20사진.png" />
+                           </image>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.21" color="WHITE" height="90.41" radius="52.8575" width="123.02" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="333.0" prefWidth="374.0" style="-fx-background-color: f7be68;">
+               <effect>
+                  <InnerShadow color="WHITE" height="32.86" radius="17.4125" width="38.79" />
+               </effect>
+               <children>
+                  <VBox layoutX="23.0" layoutY="14.0" prefHeight="144.0" prefWidth="215.0" spacing="35.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1:1 inquiry" wrappingWidth="93.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Product review" wrappingWidth="111.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="beauty review" wrappingWidth="93.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="360.0" prefWidth="375.0" style="-fx-background-color: f7be68;">
+               <effect>
+                  <InnerShadow color="WHITE" height="32.86" radius="17.4125" width="38.79" />
+               </effect>
+               <children>
+                  <VBox layoutX="26.0" layoutY="11.0" prefHeight="144.0" prefWidth="215.0" spacing="35.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="TOY" wrappingWidth="93.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Food" wrappingWidth="111.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothes" wrappingWidth="93.90818846225739">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.94" color="WHITE" height="204.83" radius="114.45750000000001" width="255.0">
+                                 <input>
+                                    <DropShadow />
+                                 </input>
+                              </InnerShadow>
+                           </effect>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="410.0" layoutY="458.0" prefHeight="17.0" prefWidth="174.0" text="Munchkin Dog Shop" textFill="#f57f00">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="#fff9d8" />
+         </effect>
+      </Label>
+      <HBox alignment="CENTER" layoutX="709.0" layoutY="458.0" prefHeight="24.0" prefWidth="255.0" spacing="30.0">
+         <children>
+            <Button fx:id="editButton" mnemonicParsing="false" onAction="#editRegProc" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: fef9f0;" text="my info" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutProc" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: fef9f0;" text="logout" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="noticeButton" alignment="CENTER" mnemonicParsing="false" onAction="#noticeOpenProc" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: fef9f0;" text="Notice" textAlignment="CENTER" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#806a5a" height="4.75" radius="1.9375" width="5.0" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="225.0" layoutY="14.0" prefHeight="40.0" prefWidth="551.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../발자국사진.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="31.0" prefWidth="438.0" text=" Munchkin Dog Shop Customer Page" textFill="#f57f00">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#ffffffcf" height="85.08" radius="39.302499999999995" spread="0.43" width="74.13">
+                     <input>
+                        <DropShadow color="#fff49d" height="203.72500000000002" radius="102.38125000000001" spread="0.06" width="207.8" />
+                     </input>
+                  </DropShadow>
+               </effect>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../발자국사진.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane layoutX="15.0" layoutY="34.0" prefHeight="200.0" prefWidth="958.0">
+         <children>
+            <Button fx:id="reserve1" alignment="CENTER" layoutY="89.0" mnemonicParsing="false" onAction="#reserveOpenProc" pickOnBounds="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: fef9f0;" text="Dog grooming reservation" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="17.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="messageButton1" alignment="CENTER" defaultButton="true" layoutX="329.0" layoutY="89.0" mnemonicParsing="false" onAction="#messageOpenProc" pickOnBounds="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: fef9f0;" text="Shop Bulletin Board" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="17.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="dogShop1" alignment="CENTER" layoutX="666.0" layoutY="89.0" mnemonicParsing="false" onAction="#dogShopProc" pickOnBounds="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: fef9f0;" text="Dog Goods" textFill="#f57f00">
+               <font>
+                  <Font name="Sitka Text" size="17.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#806a5a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Label fx:id="homeId" ellipsisString="" layoutX="150.0" layoutY="35.0" prefHeight="31.0" prefWidth="142.0" text="아이디자리">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

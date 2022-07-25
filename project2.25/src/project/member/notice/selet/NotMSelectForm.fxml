@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: ffd0a1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.member.notice.selet.NoticeMemController">
+   <children>
+      <TextField fx:id="selectTitle" editable="false" layoutX="116.0" layoutY="107.0" prefHeight="25.0" prefWidth="198.0" style="-fx-background-color: ff9d62;" />
+      <Button fx:id="cancelButton" layoutX="116.0" layoutY="446.0" mnemonicParsing="false" onAction="#exitPro" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: ff9d62;" text="Close" textFill="#ffffaa">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" color="#ffffaa" height="3.0" radius="1.0" width="3.0" />
+         </effect>
+      </Button>
+      <Label fx:id="dateLabel" layoutX="116.0" layoutY="151.0" prefHeight="23.0" prefWidth="142.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="selectText" editable="false" layoutX="50.0" layoutY="243.0" prefHeight="187.0" prefWidth="275.0">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" color="#ff9d62" height="3.0" radius="1.0" width="3.0" />
+         </effect></TextArea>
+      <Label layoutX="42.0" layoutY="200.0" text="Content" textFill="#ffffaa">
+         <font>
+            <Font name="Sitka Heading" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="104.0" text="TiTle" textFill="#ffffaa">
+         <font>
+            <Font name="Sitka Heading" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="147.0" text="Date" textFill="#ffffaa">
+         <font>
+            <Font name="Sitka Heading" size="26.0" />
+         </font>
+      </Label>
+      <Text fill="#03dd2f" layoutX="59.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read Notice">
+         <font>
+            <Font name="Sitka Text" size="42.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="110.0" fitWidth="76.0" layoutX="211.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../웃강아지.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

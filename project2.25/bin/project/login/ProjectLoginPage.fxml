@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: f7be68;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.login.LoginController">
+   <children>
+      <GridPane hgap="3.0" layoutX="712.0" layoutY="117.0" prefHeight="112.0" prefWidth="277.0" vgap="3.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="173.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="84.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="loginButton" defaultButton="true" maxWidth="169.0" mnemonicParsing="false" onAction="#loginProc" prefHeight="70.0" prefWidth="67.0" style="-fx-background-color: #FFEFD5;" text="GO !" textFill="#030303" GridPane.columnIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <InnerShadow color="#f79800" />
+               </effect>
+            </Button>
+            <Label text="P     W" textFill="#030303" GridPane.rowIndex="1">
+               <font>
+                  <Font name="HCR Batang" size="13.0" />
+               </font>
+            </Label>
+            <Label text="I        D" textFill="#030303">
+               <font>
+                  <Font name="HCR Batang" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idText" prefHeight="23.0" prefWidth="144.0" style="-fx-background-color: #FFEFD5;" GridPane.columnIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <effect>
+                  <InnerShadow color="#f79800" />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="pwText" style="-fx-background-color: #FFEFD5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <effect>
+                  <InnerShadow color="#f79800" />
+               </effect>
+            </PasswordField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </GridPane>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="716.0" layoutY="42.0" lineSpacing="5.0" prefHeight="85.0" prefWidth="270.0" text="Munchkin Dog Shop" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow color="#e5fff2" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="500.0" fitWidth="682.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../../../4조%20중간프젝/팀%20프로젝트/로그인창강아지수정.jpg" />
+         </image>
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.13" color="#0d0000" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </ImageView>
+      <Button fx:id="registerButton" layoutX="779.0" layoutY="384.0" mnemonicParsing="false" onAction="#regOpenProc" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: #FFEFD5;" text="can you join us?">
+         <effect>
+            <InnerShadow color="#f79800" />
+         </effect>
+         <font>
+            <Font name="HCR Batang" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="introButton" layoutX="778.0" layoutY="335.0" mnemonicParsing="false" onAction="#introProc" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: #FFEFD5;" text="Show Shop">
+         <effect>
+            <InnerShadow color="#f79800" />
+         </effect>
+      </Button>
+      <Button fx:id="findId" layoutX="720.0" layoutY="267.0" mnemonicParsing="false" onAction="#findIdProc" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FFEFD5;" text="Find ID">
+         <effect>
+            <InnerShadow color="#f79800" />
+         </effect>
+         <font>
+            <Font name="HCR Batang" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="findPw" layoutX="857.0" layoutY="267.0" mnemonicParsing="false" onAction="#findPwProc" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: #FFEFD5;" text="Find PassWord">
+         <effect>
+            <InnerShadow color="#f79800" />
+         </effect>
+         <font>
+            <Font name="HCR Batang" size="13.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow blurType="GAUSSIAN" color="#fffbfb" height="225.35" radius="105.5625" width="198.9" />
+   </effect>
+</AnchorPane>

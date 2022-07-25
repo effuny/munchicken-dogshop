@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="500.0" style="-fx-background-color: fee6e7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.member.messageBoard.edit.EditController">
+   <children>
+      <ImageView fitHeight="162.0" fitWidth="507.0" layoutX="12.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../상단로고.png" />
+         </image>
+         <effect>
+            <DropShadow color="WHITE" height="67.67" radius="20.125" spread="0.55" width="14.83" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="23.0" layoutY="189.0" prefHeight="383.0" prefWidth="454.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="17.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../빨뼈.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="17.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../빨뼈.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="17.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../빨뼈.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="17.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../빨뼈.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="203.0" text="Contents" textFill="#393939">
+               <font>
+                  <Font name="Sitka Text" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="34.0" text="Title" textFill="#393939">
+               <font>
+                  <Font name="Sitka Text" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="88.0" text="I    D" textFill="#393939">
+               <font>
+                  <Font name="Sitka Text" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="141.0" text="Topic" textFill="#393939">
+               <font>
+                  <Font name="Sitka Text" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="editText" layoutX="144.0" layoutY="203.0" prefHeight="94.0" prefWidth="271.0" style="-fx-background-color: pink;">
+               <effect>
+                  <DropShadow color="RED" height="6.0" radius="2.5" width="6.0" />
+               </effect>
+            </TextArea>
+            <TextField fx:id="editTitle" layoutX="144.0" layoutY="31.0" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: pink;">
+               <effect>
+                  <DropShadow color="RED" height="6.0" radius="2.5" width="6.0" />
+               </effect>
+            </TextField>
+            <ComboBox fx:id="treatment" layoutX="144.0" layoutY="138.0" prefWidth="150.0" promptText="이용하신미용상품">
+               <effect>
+                  <DropShadow color="RED" height="6.0" radius="2.5" width="6.0" />
+               </effect>
+            </ComboBox>
+            <Button fx:id="editButton" layoutX="39.0" layoutY="324.0" mnemonicParsing="false" onAction="#editProc" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: fdf68a; -fx-background-radius: 10;" text="Edit" textFill="#ee0000">
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#fdf68a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="275.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelProc" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: fdf68a; -fx-background-radius: 10;" text="cancel" textFill="#ee0000">
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#fdf68a" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <Label fx:id="idLabel" layoutX="144.0" layoutY="91.0" prefHeight="18.0" prefWidth="94.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" color="#fff6de" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </AnchorPane>
+      <Text fill="#ff0051" layoutX="163.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Munchkin Dog Shop">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

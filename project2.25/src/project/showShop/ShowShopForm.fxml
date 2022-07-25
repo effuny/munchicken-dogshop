@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: fee6e7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="75.0" prefHeight="257.0" prefWidth="457.0" style="-fx-background-color: fdf9dd;">
+         <children>
+            <Text fill="#ff9100" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store loadview">
+               <font>
+                  <Font name="HYMyeongJo-Extra" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="211.0" fitWidth="393.0" layoutX="38.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../쇼숍왼쪽지도.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="191.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is located next to the Samsung building!" />
+         </children>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.6" color="#ffdcdc" height="38.79" radius="24.825" width="62.51" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="506.0" layoutY="73.0" prefHeight="400.0" prefWidth="256.0" style="-fx-background-color: fdf9dd;">
+         <children>
+            <Text fill="#ff9100" layoutX="16.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog grooming pictures">
+               <font>
+                  <Font name="HYMyeongJo-Extra" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../쇼숍오른쪽아래녀석.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.33" color="WHITE" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../쇼숍오른쪽녀석.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.33" color="WHITE" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="77.0" layoutX="96.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../뼈다귀.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.6" color="#ffdcdc" height="38.79" radius="24.825" width="62.51" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="342.0" prefHeight="131.0" prefWidth="457.0" style="-fx-background-color: fdf9dd;">
+         <children>
+            <Text fill="#ff9100" layoutX="26.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog grooming guide">
+               <font>
+                  <Font name="HYMyeongJo-Extra" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#ff006c" layoutX="28.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="소형견 : 50000 " />
+            <Text fill="#ff006c" layoutX="29.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="중형견 : 70000" />
+            <Text fill="#ff006c" layoutX="29.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="대형 및 특수견 : 150000" />
+         </children>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.6" color="#ffdcdc" height="38.79" radius="24.825" width="62.51" />
+         </effect>
+      </AnchorPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#ff0b0b" layoutX="350.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show shop">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="302.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../쇼숍위에강아지.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="452.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../쇼숍위에강아지.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="350.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.manager.memberList.updatedeleteBoard.updateBoard.UpdateController">
+   <children>
+      <VBox />
+      <Text fontSmoothingType="LCD" layoutX="52.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호 확인" wrappingWidth="75.796875" />
+      <RadioButton fx:id="manRadio" layoutX="159.0" layoutY="271.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="남">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="womanRadio" layoutX="218.0" layoutY="271.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="여" toggleGroup="$gender" />
+      <Text fontSmoothingType="LCD" layoutX="51.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="성별" />
+      <Text fontSmoothingType="LCD" layoutX="51.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="나이" />
+      <ComboBox fx:id="ageCombo" layoutX="136.0" layoutY="304.0" prefWidth="150.0" promptText="연령선택" />
+      <Button fx:id="updateProc" layoutX="117.0" layoutY="464.0" mnemonicParsing="false" onAction="#updateProc" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: FFA07A;" text="회원 수정">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text fontSmoothingType="LCD" layoutX="143.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="먼치킨 애견샵" />
+      <PasswordField fx:id="pwTxt" layoutX="153.0" layoutY="204.0">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+         </effect>
+      </PasswordField>
+      <PasswordField fx:id="confirmTxt" layoutX="151.0" layoutY="246.0">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="1.0" height="3.0" radius="1.0" width="3.0" />
+         </effect>
+      </PasswordField>
+      <HBox alignment="CENTER_LEFT" layoutY="154.0" prefHeight="50.0" prefWidth="350.0" spacing="60.0">
+         <children>
+            <Label text="I        d" />
+            <Label fx:id="idLabel" text="Label" />
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-3.0" layoutY="331.0" prefHeight="50.0" prefWidth="355.0" spacing="25.0">
+         <children>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="전화번호" />
+            <ComboBox fx:id="countryCode" prefHeight="23.0" prefWidth="87.0" />
+            <TextField fx:id="phoneNumber" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="160.0" fitWidth="355.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Users/Administrator/Desktop/boke.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="52.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호" />
+      <Label layoutX="21.0" layoutY="388.0" text="애완견1" />
+      <Label layoutX="74.0" layoutY="388.0" text="이름" />
+      <Label layoutX="196.0" layoutY="388.0" text="성별" />
+      <Label layoutX="74.0" layoutY="423.0" text="나이" />
+      <Label layoutX="196.0" layoutY="423.0" text="견종" />
+      <ComboBox fx:id="petBreed" layoutX="240.0" layoutY="419.0" prefHeight="23.0" prefWidth="93.0" />
+      <ComboBox fx:id="petAge" layoutX="117.0" layoutY="419.0" prefHeight="23.0" prefWidth="64.0" />
+      <TextField fx:id="petName1Txt" layoutX="118.0" layoutY="384.0" prefHeight="23.0" prefWidth="64.0" />
+      <RadioButton fx:id="petMaleRadio" layoutX="240.0" layoutY="388.0" mnemonicParsing="false" text="남">
+         <toggleGroup>
+            <ToggleGroup fx:id="pexsex" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="petFemaleRadio" layoutX="287.0" layoutY="388.0" mnemonicParsing="false" text="여" />
+   </children>
+</Pane>
